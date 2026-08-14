@@ -7,6 +7,9 @@ public class application_form{
     public void display(){
         System.out.println(name);
         System.out.println(rollNo);
+    }
+    //disp is declared as private
+    private void disp(){
         System.out.println(mark);
     }
     public void setCutoff(double cutoff){
@@ -20,6 +23,8 @@ public class application_form{
         sc.rollNo=167;
         sc.setCutoff(194.5);
         sc.display();
+        //private methods are accessible within the same class 
+        sc.disp();
     }
 }
 
