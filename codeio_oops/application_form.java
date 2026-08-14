@@ -3,17 +3,18 @@ package codeio_oops;
 public class application_form{
     String name;
     int rollNo;
-    double mark;
+    double cutoff;
     public void display(){
         System.out.println(name);
         System.out.println(rollNo);
     }
     //disp is declared as private
     private void disp(){
-        System.out.println(mark);
+        System.out.println(cutoff);
     }
     public void setCutoff(double cutoff){
-        mark=cutoff;
+        //this keyword
+        this.cutoff=cutoff;
     }
     //Passing input through methods instead of variables
     public static void main(String[] args){
