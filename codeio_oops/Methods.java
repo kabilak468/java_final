@@ -1,4 +1,4 @@
-public class methods{
+public class Methods{
     public static void main(String[] args) {
         System.out.println(add(3,4));
         display();
